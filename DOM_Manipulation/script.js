@@ -31,3 +31,24 @@ innerParagraph.innerText = "ME TOO!";
 dressToImpress.appendChild(innerParagraph);
 
 container.appendChild(dressToImpress);
+
+const btn = document.querySelector("#btn");
+btn.addEventListener("click", () => {
+    btn.style.backgroundColor = "red";
+});
+
+btn.addEventListener("click", function (e) {
+    console.log(e.target);
+});
+
+btn.addEventListener("dblclick", () => {
+    alert("CHICKEN JOCKEY!");
+});
+
+btn.addEventListener("click", function (e) {
+    alert("I...am STEVE");
+});
+
+btn.addEventListener("mouseenter", () => {
+    alert("Nuh-uh!");
+});
